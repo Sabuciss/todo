@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Sveiks, Laravel</h1>
+    <h1>Sveiks, Laraveliņ!</h1>
 </body>
 </html>
