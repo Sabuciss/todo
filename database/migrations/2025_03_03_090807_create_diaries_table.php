@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('diaries', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->longText('body');
+            $table->mediumText('body');
             $table->date('date');
             $table->timestamps();
         });
