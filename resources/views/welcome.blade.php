@@ -7,12 +7,9 @@
     <title>home page</title>
 </head>
 <body>
-    <div>
-        <a href="{{ url('/why') }}">Kāpēc</a>
-        <a href="{{ url('/diaries') }}">Dienasgrāmata</a>
-        <a href="{{ url('/todos') }}">Darāmais</a>
-    </div>
-    
+
+    <x-navigation></x-navigation>
+
      <h1>Sveiks, Laraveliņ!</h1>
      
 </body>

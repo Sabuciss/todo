@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<a href="{{ url('/') }}">Mājas</a>
+    <x-navigation></x-navigation>
 
 
     <p>Mūsdienu straujajā dzīves ritmā efektīva laika plānošana un uzdevumu pārvaldība ir kļuvusi par būtisku ikdienas sastāvdaļu. Darāmo darbu saraksta vietne piedāvā strukturētu pieeju, kas palīdz lietotājiem organizēt savus pienākumus un sasniegt mērķus.</p>

@@ -8,16 +8,16 @@
 </head>
 <body>
     
-<a href="{{ url('/') }}">Mājas</a>
+    <x-navigation></x-navigation>
 
 
-<h1>Dienasgramatas raksti</h1>
+    <h1>Dienasgramatas raksti</h1>
 
-<ul>
-  @foreach ($diaries as $diary)
-    <li>{{ $diary->title }}</li>
-  @endforeach
-</ul>
+    <ul>
+      @foreach ($diaries as $diary)
+        <li><a href="/diaries/{{ $diary->id }}">{{ $diary->title }}</a></li>
+      @endforeach
+    </ul>
 
 </body>
 </html>

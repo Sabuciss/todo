@@ -7,10 +7,8 @@
     <title>Veicamie uzdevumi</title>
 </head>
 <body>
-    
-<a href="{{ url('/') }}">Mājas</a>
 
-
+<x-navigation></x-navigation>
 <h1>Visi veicamie uzdevumi</h1>
 
 <ul>

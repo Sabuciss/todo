@@ -7,6 +7,7 @@
     <title>Parādii</title>
 </head>
 <body>
+<x-navigation></x-navigation>
         <h1>{{ $todo->content }}</h1>
         <p>Izpildīts: {{ $todo->completed ? "Jā" : "Nē" }}</p>
 </body>
