@@ -12,6 +12,6 @@ Route::get('/why', function () {
     return view('why');
 });
 
-Route::get('/todos/{todo_id}', [ToDoController::class, 'show']);
 Route::get('/todos', [ToDoController::class, 'index']);
 Route::get('/diaries', [DiaryController::class, 'index']);
+Route::get('/todos/{todo}', [ToDoController::class, 'show']);
