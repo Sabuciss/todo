@@ -10,4 +10,9 @@ class ToDoController extends Controller
         $todos = ToDo::all();
         return view("todos.index", compact("todos"));
     }
+    public function show($todo_id) {
+        $todo = ToDo::findOrFail($todo_id);
+    }
 } 
+
+     

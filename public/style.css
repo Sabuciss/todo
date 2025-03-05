@@ -1,9 +1,10 @@
 body{
-    background-color: rgb(79, 140, 186);
+    background: rgb(97,1,102);
+    background: linear-gradient(90deg, rgba(97,1,102,1) 0%, rgba(203,71,209,1) 35%, rgba(252,196,255,1) 100%);
     color: cornsilk;
 }
 a{
-color: rgb(165, 42, 157);
+color: rgb(166, 219, 254);
 }
 
   
