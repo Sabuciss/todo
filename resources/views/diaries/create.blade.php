@@ -3,6 +3,7 @@
 
 <x-slot:title>Izveidot dienasgrāmatas ierakastu</x-slot:title>
 <h1>Izveidot dienasgrāmatas ierakstu</h1>
+
 <form action="/diaries" method="POST">
     @csrf
 
