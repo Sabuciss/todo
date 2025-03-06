@@ -30,9 +30,8 @@ class DiaryController extends Controller
             "body" =>$validated["body"],
             "date" =>$validated["date"]
             ]);
-            
+
             return redirect("/diaries");
             }
-    
 
 } 
