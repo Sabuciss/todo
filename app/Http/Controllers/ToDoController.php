@@ -30,6 +30,9 @@ class ToDoController extends Controller
     
     return redirect("/todos");
     }
+    public function edit(){
+        return view('todos.edit', compact('todo'));
+    }
 
 } 
 
