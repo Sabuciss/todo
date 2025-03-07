@@ -7,7 +7,7 @@
         <li><a href="/todos">todo</a></li>  
         <li><a href="/todos/create">izveidot daramo</a></li>
         <li><a href="/diaries">diaries</a></li>
-        <li><a href="/diaries/create">izveidot dienasgrāmatu</a></li>
+        <li><a href="/diary/create">izveidot dienasgrāmatu</a></li>
 
     </ul>
 </nav>

@@ -5,8 +5,8 @@
   </x-slot:title>
 <h1>Dienasgramatas raksti</h1>
 <ul>
-      @foreach ($diaries as $diary)
-        <li><a href="/diaries/{{ $diary->id }}">{{ $diary->title }}</a></li>
+      @foreach ($diary as $diary2)
+        <li><a href="/diaries/{{ $diary2->id }}">{{ $diary2->title }}</a></li>
       @endforeach
     </ul>
 

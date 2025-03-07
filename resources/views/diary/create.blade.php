@@ -4,7 +4,7 @@
 <x-slot:title>Ieraksts</x-slot:title>
 <h1>Izveidot dienasgrāmatas ierakstu</h1>
 
-<form action="/diaries" method="POST">
+<form action="/diary" method="POST">
     @csrf
 
   <input name="title">

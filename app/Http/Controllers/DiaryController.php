@@ -9,20 +9,20 @@ class DiaryController extends Controller
 {
     public function index()
     {
-        $diaries = Diary::all();
-        return view("diaries.index", compact("diaries"));
+        $diary = Diary::all();
+        return view("diary.index", compact("diary"));
     }
     public function show(Diary $diary) {
-        return view("diaries.show", compact("diary"));
+        return view("diary.show", compact("diary"));
     }
     public function create(){
-        return view("diaries.create");
+        return view("diary.create");
     }
     public function store(Request $request){ 
         $validated = $request->validate([
         "title" => ["required", "max:255"],
         "body" => ["required", "max:255"],
-        "date" => ["required", Rule::date()->format('d-m-Y')]
+        "date" => ["required", Rule::date()->format('Y-d-m')]
         ]);  
 
         Diary::create([
