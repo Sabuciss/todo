@@ -3,14 +3,25 @@
 
 <h1>Rediģe ierakstu</h1>
 
-<form action="/todos/{{ $todo->id }}" method="POST">
+<form action="{{ route('todos.update', $todo->id) }}" method="POST">
     @csrf
     @method('PUT')
-  
-    <label for="content">Ievadi saturu:</label>
-    <input type="text" id="content" name="content" value="{{ $todo->content }}">
 
-  <button >Saglabāt</button>
+    <label for="content">Content</label>
+    <input type="text" name="content" value="{{ old('content', $todo->content) }}" required>
+
+    @error('content')
+        <p>{{ $message }}</p>
+    @enderror
+
+    <label for="completed">Completed</label>
+    <input type="checkbox" name="completed" value="1" {{ old('completed', $todo->completed) ? 'checked' : '' }}>
+
+    @error('completed')
+        <p>{{ $message }}</p>
+    @enderror
+
+    <button type="submit">saglabā</button>
 </form>
 
 </x-layout>
