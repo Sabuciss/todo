@@ -30,22 +30,30 @@ class ToDoController extends Controller
     
     return redirect("/todos");
     }
+
     public function edit(ToDo $todo) {
+        $todos = ToDo::all();
         return view('todos.edit', compact('todo'));
     }
     
     public function update(Request $request, ToDo $todo) {
-        $validated = $request->validate([
+            $validated = $request->validate([
             'content' => ['required', 'max:255'],
             'completed' => ['boolean'],
         ]);
     
         $todo->content = $validated['content'];
-        $todo->completed = $validated['completed'] ?? false;
+        $todo->completed = $validated['completed'];
         $todo->save();
     
-        return redirect()->route('todos.show', ['todo' => $todo->id]);
+        return redirect("/todos");
     }
+
+     public function destroy(ToDo $todo){
+        $todo->delete();
+
+        return redirect("/todos");
+     }
 } 
 
      

@@ -1,9 +1,9 @@
 <x-layout>
 <x-slot:title>Rediģe</x-slot:title>
 
-<h1>Rediģe ierakstu</h1>
+<h1>Rediģe ierakstu: "{{$todo->content}}"</h1>
 
-<form action="{{ route('todos.update', $todo->id) }}" method="POST">
+<form action="/todos/{{ $todo->id }}" method="POST">
     @csrf
     @method('PUT')
 
@@ -14,8 +14,12 @@
         <p>{{ $message }}</p>
     @enderror
 
-    <label for="completed">Completed</label>
-    <input type="checkbox" name="completed" value="1" {{ old('completed', $todo->completed) ? 'checked' : '' }}>
+    <label>
+        Izpildīts:
+    <input name="completed" type="hidden" value="0">
+    <input type="checkbox" name="completed" value="1" {{  $todo->completed ? 'checked' : '' }}>
+    </label>
+
 
     @error('completed')
         <p>{{ $message }}</p>
