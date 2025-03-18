@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->mediumText('body');
             $table->date('date');
+            $table->enum("priority", ["low", "medium", "high"]);
             $table->timestamps();
         });
     }

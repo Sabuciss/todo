@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Diary;
 use Illuminate\Validation\Rule;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class DiaryController extends Controller
 {

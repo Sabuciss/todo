@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ToDo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class ToDoController extends Controller
 {
