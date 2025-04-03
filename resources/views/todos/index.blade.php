@@ -2,6 +2,7 @@
   <x-slot:title>
     Uzdevumii
   </x-slot:title>
+
 <h1>Visi uzdevumi</h1>
   <ul>
   @foreach ($todos as $todo)

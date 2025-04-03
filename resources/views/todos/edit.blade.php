@@ -1,6 +1,7 @@
 <x-layout>
 <x-slot:title>Rediģe</x-slot:title>
 
+
 <h1>Rediģe ierakstu: "{{$todo->content}}"</h1>
 
 <form action="/todos/{{ $todo->id }}" method="POST">
